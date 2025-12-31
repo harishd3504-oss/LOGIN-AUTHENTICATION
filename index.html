@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Login System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg">
+<canvas id="matrix"></canvas>
+<canvas id="network"></canvas>
+</div>
+
+<div class="auth-box">
+<h2>Secure Access</h2>
+
+<div id="login-step">
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<div class="strength">
+<div id="strength-bar"></div>
+</div>
+<p id="strength-text"></p>
+<button class="full-btn" id="loginBtn">Login</button>
+<p class="status" id="loginStatus"></p>
+</div>
+
+<div id="otp-step" class="hidden">
+<input type="text" id="otp" placeholder="Enter OTP">
+<p class="demo-otp" id="demoOtp"></p>
+<button class="full-btn" id="otpBtn">Verify OTP</button>
+<p class="status" id="otpStatus"></p>
+</div>
+
+<div id="success-step" class="hidden">
+<h3>Access Granted</h3>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
